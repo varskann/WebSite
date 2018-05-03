@@ -18,8 +18,8 @@
     "default": {
         "django": {
             "hashes": [
-                "sha256:c8228419346a0e84aec202a43e181afc6572b861d38f8a0306dbce6abef0",
-                "sha256:c8228419346a0e84aec202a43e181afc6572b861d38f8a0306dbce6abef0"
+                "sha256:18986bcffe69653a84eaf1faa1fa5a7eded32cee41cfecc77fdc65a3e046404d",
+                "sha256:18986bcffe69653a84eaf1faa1fa5a7eded32cee41cfecc77fdc65a3e046404d"
             ],
             "index": "pypi",
             "version": "==1.11.13"
