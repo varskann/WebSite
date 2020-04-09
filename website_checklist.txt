@@ -1,0 +1,15 @@
+1. Build Application - Use Flask to start with.
+
+2. Platform as a service - Heroku, PythonAnywhere
+
+3. Hosting Services 
+	3.1. AWS, Azure, Google Cloud Platform
+	3.2. Virtual Private Servers (VPS) - Linode, Digital Ocean
+	3.3. Provisioning tools - Ansible, SaltStack
+
+4. Python package/dependency manager - virtual environments
+	3.1. Anaconda v/s virtualenv - or use pyenv (combines both)
+	3.2. Poetry v/s pipenv v/s virtualenv - Pick one.. Poetry?
+	3.3. If want to make it compatible with multiple python versions, Use pyenv instead
+
+5. A virtualenv only encapsulates Python dependencies. A Docker container encapsulates an entire OS. With a Python virtualenv, you can easily switch between Python versions and dependencies, but you're stuck with your host OS. ... Therefore Docker is much closer to a Virtual Machine than virtual environment
