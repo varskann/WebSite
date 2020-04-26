@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-app.secret_key = 'development key'
+app.secret_key = b'\xb5\xfb\xc3\x16a\x7f\xd4\xe2\xa6!\x13\x7f\xa8\xbf@oo\xfbY$\xc7\x1cy '
 
 @app.route('/', methods=["GET", "POST"])
 def index():
