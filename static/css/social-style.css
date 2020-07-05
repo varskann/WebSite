@@ -1,6 +1,5 @@
-@import "style.css"
 
-.contact-content{
+.contact-body{
   /*border:1px solid;*/
   /*padding:50px;*/
   width:100%;
@@ -110,7 +109,7 @@
 .field input {
   position: relative;
   width: 100%;
-  height: 100%
+  height: 100%;
   color: #595f6e;
   padding-top: 20px;
   padding-bottom: 5px;

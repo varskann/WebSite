@@ -1,0 +1,265 @@
+
+body {
+    font-family: playfair, sans-serif;
+    height: 100vh;
+
+}
+
+.portfolio {
+    position: relative;
+    overflow: auto;
+}
+
+.portfolio-header {
+    background-color: #9B9CFE;
+    opacity: 0.8;
+    width: 100%;
+    font-size:30px;
+    color: white;
+	font-family: playfair, Times, Monospace;
+	text-align: center;
+    display: table;
+}
+
+.portfolio-header p {
+    margin: 20px auto;
+    padding: 0;
+}
+.portfolio-header span {
+	display: table-cell;  
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.portfolio-body{
+    position: relative;
+    align-items: center;
+    text-align: center;
+	overflow: hidden;
+    color: #9B9CFE;
+}
+
+.portfolio-body .professional{
+    position: relative;
+	overflow: hidden;
+    margin: 80px 50px;
+    width: 100%;
+
+}
+
+.portfolio-body .professional .portfolio-point{
+    position: absolute;
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    height: 200px;
+    bottom: 0;
+    left: 10px;
+    margin-right: 10px;
+
+}
+
+/* .portfolio-body .professional .portfolio-text {
+    text-align: justify;  
+} */
+
+.portfolio-body .personal{
+    position: relative;
+	overflow: hidden;
+    margin: 80px auto;
+}
+
+.portfolio-body .personal .portfolio-dab{
+    position: absolute;
+    height: 300px;
+    top: 10px;
+    right: 100px;
+}
+
+.portfolio-body h1{
+    color: black;
+    margin: 20px 10.0em;
+    opacity: 0.8;
+}
+
+.portfolio-body p{
+    color: black;
+    margin: 20px 10.0em;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.portfolio-body p a{
+    text-decoration: none;
+    color: #9B9CFE;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.portfolio-body .personal .portfolio-details {
+    margin: 20px -3px 0px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    width: 5em;
+    opacity: 0.8;
+}
+
+.portfolio-body .personal .portfolio-details:hover {
+    font-weight: bold;
+    opacity: 1.0;
+}
+
+.portfolio-body .personal .portfolio-skills {
+    margin: 50px auto;
+    padding: 50px;
+}
+
+/* .portfolio-body .portfolio-skills:hover {
+    background: rgba(155, 156, 254, 0.2);
+    z-index: 10px;
+    box-shadow: 2px 2px 2px 2px #9B9CFE;
+   
+} */
+
+.portfolio-body .personal .portfolio-skills table{
+    table-layout: fixed;
+    margin: 10px auto;
+    width: 70rem;
+    text-align: center;
+}
+
+
+.portfolio-body .personal .portfolio-skills table tr th{
+    font-size: 20px;
+    font-weight: light;
+    margin: 20px 10px;
+    padding: 0 auto;
+    color: #9B9CFE  ;
+    width: 25%;
+}
+.portfolio-body .personal .portfolio-skills table tr th i{
+    font-size: 25px;
+    font-weight: light;
+    margin: 5px auto;
+    padding: 5px auto;
+    width: 20%;
+    color: black;
+}
+.portfolio-body .personal .portfolio-skills table tr td{
+    margin: 20px 20px;
+    padding: 20px 30px;
+    overflow-wrap: break-word;
+    text-overflow: clip;
+    color: black;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+@media all and (max-width:768px) {
+    .portfolio-body .personal .portfolio-skills tr {    display: table;  width:100%;    }               
+    .portfolio-body .personal .portfolio-skills th {    display: table-row; }           
+}
+
+
+.portfolio-body .personal .portfolio-awards {
+    margin: 50px auto;
+    padding: 50px;
+    color: black;
+}
+
+.portfolio-body .personal .portfolio-awards ul{
+    margin: 20px 20px 20px 350px;
+    padding: 0;
+    font-weight: lighter;
+    text-align: left;
+    opacity: 0.6;
+
+}
+
+.portfolio-body .personal .portfolio-awards ul li{
+    margin: 2px auto;
+}
+
+.portfolio-body .personal .portfolio-awards ul li strong{
+    font-weight: bolder;
+    opacity: 1.0;
+}
+
+.portfolio-body .personal .portfolio-projects{
+    margin: 50px auto;
+    padding: 50px;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-body .personal .portfolio-projects p span{
+    opacity: 1.0 !important;
+}
+
+.portfolio-body .personal .portfolio-projects p{
+    opacity: 0.6;
+}
+
+
+.portfolio-body .personal .portfolio-projects table{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    table-layout:fixed;
+}
+.portfolio-body .personal .portfolio-projects table th{
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    height: 33%;
+    position: relative;
+
+}
+
+.fade_rule {
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 25.0em;
+    margin: 0 auto;
+    background-image: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -o-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -moz-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -ms-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white) );
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -10;
+}
+
+.bounce {
+    opacity: 1.0 !important;
+    display:inline-block;
+    animation: bounce 0.5s ease-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+
+@-moz-keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+@-o-keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+@-webkit-keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}

@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% block stylesheet %} 
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/portfolio.css') }}">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/flip_card.css') }}">
+    <!-- <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/wave.css') }}"> -->
+    <!-- <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/rain.css') }}"> -->
+{% endblock %}
+
+{% block content %} 
+<div class="portfolio" id="portfolio">
+    <div class="portfolio-header">
+        <span><p style="font-size:360%;">Portfolio</p>
+        <p>Comprehend. Visualize. Formulate. Deliver.</p></span>
+    </div>
+
+
+    <div class="portfolio-body">
+        <canvas id=c></canvas>
+
+
+
+        <div class="professional">
+            <img class="portfolio-point" src="{{ url_for('static', filename='images/avatar_point.png') }}">
+
+            <div class="portfolio-text">
+                <h1>A Software Engineer by Profession</h1>
+                <div class="fade_rule"></div>    
+                <p>
+                    I work as Senior Software Engineer for <a href="https://o9solutions.com/" target="_blank"> O9 Soltuions Pvt. Ltd.</a> 
+                    as part of the RnD team, delivering Machine&nbsp;Learning packages and plugins for customer data predictions<br/>
+                    Before this I was working as Research Engineer with <a href="https://www.netradyne.com/" target="_blank"> Netradyne India Pvt. Ltd.</a>
+                    developing state-of-the-art ADAS system.
+                </p>
+            </div>
+        </div>
+        
+        <hr class="hr-text" data-content="</>">
+
+        <div class="personal">
+
+            <div class="personal-text">
+                <h1>A Geek by Attitude</h1>
+                <div class="fade_rule"></div>              
+                <p>
+                    In my free time I am a Foodie, an Artist an d a Techie<br/>
+                    <i>Go ahead have a peek into <a class='bounce' href="{{ url_for('gallery') }}">life</a> 
+                    and/or my <a class='bounce' href="{{ url_for('gallery') }}">art</a><br/>
+                    Or keep scrolling for my tech saviness <br/></i>
+                    <a class='portfolio-details' href="#skills">Skills!</a> 
+                    <a class='portfolio-details' href="#awards">Awards!</a> 
+                    <a class='portfolio-details' href="#projects">Projects!</a>  
+                    <a class='portfolio-details' target="_blank" href="https://drive.google.com/file/d/1a9Ju1KTZdn-LNYEcrXWSQr6Fc7xNBHeX/view?usp=sharing">Resume!</a> 
+                </p>
+            </div>
+            <img class="portfolio-dab" src="{{ url_for('static', filename='images/avatar_dab_full.png') }}">
+
+            <div class="portfolio-skills">
+                <h1 id='skills'>Skills</h1>
+                <div class="fade_rule"></div>              
+                <table>
+                    <tr>
+                        <th><i class="fa fa-laptop-code"></i><br/>Programming&nbsp;Languages</th>
+                        <th><i class="fa fa-tools"></i><br/>Tools&nbsp;&&nbsp;Utilities</th>
+                        <th><i class="fa fa-network-wired"></i><br/>Frameworks</th>
+                        <th><i class="fa fa-mug-hot"></i><br/>Miscellaneous</th>
+                    </tr>
+                    <tr>
+                        <td>Python, Julia. C, Javascript, C++, R, C#</td>
+                        <td>Matplotlib, Git, Github, Bitbuket, MySQL, PostgreSQL</td>
+                        <td>Caffe, Pytorch, Django, Flask, Tensorflow, Scikit-learn</td>
+                        <td>Numpy, Pandas, CSS, Bash</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+            <div class="portfolio-awards">
+                <h1 id='awards'>Awards / Achievements</h1>
+                <div class="fade_rule"></div>        
+                <p>Ah Well, I have done quite a few good things ;) </p>
+      
+                <ul>
+                    <li>Coordinator of Fine Arts Club at Institute of Technology, Kanpur</li>
+                    <li>Secured an <strong>AIR 237</strong> (99.95 percentile) in IITJEE exam amongst 468280 candidates</li>
+                    <li><strong>AIR 96</strong> in All India Engineering Entrance Exam(AIEEE) amongst ~1100000 candidates</li>
+                    <li>Secured an All India <strong>Rank 4 in NSTSE</strong> exam organized by Unified Council</li>
+                    <li><strong>2nd rank</strong> in UPTU, recognition by the city government</li>
+                    <li>Scored second highest in the city and got Distinction award in Mathemetics in AISSE</li>
+                </ul>
+
+                <p>Extra-curricular and Positions of Responsibilities</p>
+                <ul>
+                    <li>Mess Secretary, Hall-3 at Indian Institue of Technology</li>
+                    <li>Represented Fine Arts Club, IIT-Kanpur at inter-college festivals</li>
+                    <li>Finance Executive for Antaragni'13 and Antaragni'14 </li>
+                    <li>NCC Cadet of <strong><em>2UP CTR IIT Kanpur</em></strong> regiment, 2011-2012</li>
+                </ul>
+            </div>
+
+
+            <div class="portfolio-projects">
+                <h1 id='projects'>Projects</h1>
+                <div class="fade_rule"></div>    
+                <p>Although the list is quite long, the mentioned ones came with new learnings and inclinations&nbsp;<span class="bounce">❤️</span></p>
+                <p style="font-size:12px">You can go through the detailed list <a class='bounce' href="#portfolio">here</a></p>
+                <table>
+                    <tr>
+                        <th>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <div class="sub_title">Moral Judgement in Infants</div>
+                                    <img src="http://1.bp.blogspot.com/-g0IcPDTcYqc/TVVJAO9pLaI/AAAAAAAAACU/cRHJ4yQugew/s1600/Good_versus_Evil_by_curua.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <p>
+                                        Moral Judgement in infants from different socio-economic classes<br/>
+                                        <span style="font-size:15px; font-weight: lighter;">
+                                            Following the works of <a style="color: white;" href="https://psych.ubc.ca/profile/kiley-hamlin/">Prof. Kiley Hamlin</a>, 
+                                            we tried the establish whether the innate quality of moral judgement differs based on their socio-economic environment<br/>
+
+                                            Guess what happened? Little souls don't care, they can tell good v/s evil better than us grown ups
+                                        </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </th>
+
+                        <th>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <div class="sub_title">Ludo meets AI</div>
+                                    <img src="https://cdn.dribbble.com/users/1518720/screenshots/6226326/img_0129.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <p>
+                                        Probabilistic approach based Ludo game<br/>
+                                        <span style="font-size:15px; font-weight: lighter;">
+                                            Ya, sorry to burst the excitement of super intelligent Ludo player<br/>
+                                            But for me, it was the very first time I built a Game myself and saw AI in practice. 
+                                            Although, it was a simple probabilistic agent but set definitely increased my probability to join the field
+                                        </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </th>
+                        <th>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <div class="sub_title">face Recognition</div>
+                                    <img src="https://i0.wp.com/krazytech.com/wp-content/uploads/Face-detection-and-recognition-e1462652980288.jpg?resize=600%2C500&ssl=1" alt="Avatar" style="width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <p>
+                                        Face Recognition Server<br/>
+                                        <span style="font-size:15px; font-weight: lighter;">
+                                            One of my latest projects in the ML/DL world. As part of Netradyne, I developed a face recognition system
+                                            for the fleet drivers. Learnings, technical and non-technical(IYKWIM), I had during the journey are gonna stay with me 
+                                            till the end of my days.
+                                        </span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </th>
+                    </tr>
+                </table>
+                
+
+            </div>
+
+    </div>
+
+    
+
+
+</div>
+
+
+{% endblock %}
+
+{% block jsscript %}
+<!-- <script src="{{url_for('static', filename='js/jquery.ripples-min.js')}}"></script> -->
+<script src="{{url_for('static', filename='js/portfolio.js')}}"></script>
+<script src="{{url_for('static', filename='js/background.js')}}"></script>
+
+
+
+{% endblock %}
+

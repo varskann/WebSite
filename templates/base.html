@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/base.css') }}">
+
+
+	{% block stylesheet %}
+	{% endblock %}
+
+
+	<title>Hi, I'm Kanishk </title>
+
+
+
+</head>
+
+<body>
+	<div id="main">
+
+		<div class="content-wrap">
+
+			<div>
+				<!-- SideNav slide-out button -->
+				<a style="font-size:30px;cursor:pointer" class="openbtn" onclick="open_nav()"><i class="fas fa-bars"></i></a>
+
+				<div id="side_nav" class="side_nav">
+					<a href="javascript:void(0)" style="font-size:30px;cursor:pointer" class="closebtn" >
+						<i class="fas fa-bars" onclick="close_nav()"></i>
+					</a>
+					<a style="margin-bottom: 50px; font-size: 25px;" href="#">
+						<img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo">
+						<br/><span>Kanishk&nbsp;Varshney</span>
+					</a>
+
+					<a href="{{ url_for('index') }}"><i class="fa fa-home item">&nbsp;Home</i></a>
+					<a href="{{ url_for('gallery') }}"><i class="fa fa-images item">&nbsp;Life</i></a>
+					<a href="{{ url_for('portfolio') }}"><i class="fa fa-briefcase item">&nbsp;Portfolio</i></a>
+					<a href="{{ url_for('contact') }}"><i class="fa fa-address-card item">&nbsp;Contact</i></a>
+				</div>
+			</div>
+		
+			{% block content%}
+			{% endblock %}
+		</div>	
+
+		<div class="footer">
+			<p>&copy; Copyright 2020 Kanishk Varshney.
+			All Rights Reserved.</p>
+		</div>
+	</div>
+
+
+
+
+	<!-- Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>
+	<script src="{{url_for('static', filename='js/jquery.awesome-cursor.min.js')}}"></script></pre>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="{{url_for('static', filename='js/base.js')}}"></script>
+
+	<!-- <script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script> -->
+	{% block jsscript %}
+	{% endblock %}
+</body>
+</html>

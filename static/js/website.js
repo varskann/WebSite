@@ -15,6 +15,12 @@ function showSlides() {
   setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 
+$(document).ready(function() {
+// SideNav Button Initialization
+$(".button-collapse").sideNav({
+slim: true,
+});
+});
 
 
 var dance = {

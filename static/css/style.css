@@ -3,6 +3,9 @@
 	background: transparent;
 }
 
+.navbar {
+	color: #51bfda'
+}
 .nav-item {
 	display: inline;
 	margin-right: 20px;
@@ -41,7 +44,15 @@ a:hover:after {
   font-family: kalam;
   src: url(Kalam-Light.ttf);
 }
+@font-face {
+	font-family: playfair;
+	src: url(PlayfairDisplay-Regular.ttf);
+  }
 
+@font-face {
+	font-family: stalemate;
+	src: url(Stalemate-Regular.ttf);
+  }
 
 body {
 	background-color: #efffff;
@@ -76,11 +87,11 @@ th {
 }
 
 .home-text p{
-	font-family: peixe;
+	font-family: playfair;
 }
 
 .home-text ul{
-	font-family: dpdork;
+	font-family: playfair;
 }
 
 .home-image {
@@ -98,7 +109,7 @@ th {
 	background-color: #343A40;
 	height: 300px;
 	width: 100%;
-	font-family: dpdork, Times, Monospace;
+	font-family: playfair, Times, Monospace;
 	text-align: center;
 	display: table;
 }
@@ -117,7 +128,7 @@ th {
 	background-color: #343A40;
 	height: 300px;
 	width: 100%;
-	font-family: dpdork, Times, Monospace;
+	font-family: playfair, Times, Monospace;
 	text-align: center;
 	display: table;
 }
@@ -144,7 +155,7 @@ th {
 	background-color: #343A40;
 	height: 300px;
 	width: 100%;
-	font-family: dpdork, Times, Monospace;
+	font-family: playfair, Times, Monospace;
 	text-align: center;
 	display: table;
 }
@@ -342,7 +353,7 @@ th {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  font-family: peixe;
+  font-family: playfair;
 }
 
 /* The dots/bullets/indicators */

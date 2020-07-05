@@ -1,0 +1,140 @@
+@import "base.css"
+
+body {
+    font-family: playfair, sans-serif;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url("../images/header.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header{
+    position: relative;
+    background-color: white;
+    font-size:30px;
+    color: #9B9CFE;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.header .home-text p {
+    margin: 20px auto;
+    opacity: 0.5;
+    padding: 0;
+}
+
+.header .hi{
+    position: absolute;
+    height: 200px;
+    bottom: 0px;
+    right: 100px;
+    margin: 0px auto;
+    align-items: right;
+}
+
+
+.content {
+    background-color: white;
+    opacity: 0.5;
+    font-size:30px;
+    color: #9B9CFE;
+    text-align: center;
+}
+
+
+.content ul{
+    margin: 20px 20px 20px 400px;
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.content ul a{
+    text-shadow: 2px 2px 2px #9B9CFE;
+    text-decoration: none;
+    color:rgb(146, 148, 253);
+    display: inline-block;
+    animation: dance 1s linear infinite alternate;
+
+}
+
+@keyframes dance {
+    0% {transform: rotate(20deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+@-moz-keyframes dance {
+    0% {transform: rotate(20deg);}
+    100% {transform: rotate(-20deg);}
+}
+@-o-keyframes dance {
+    0% {transform: rotate(20deg);}
+    100% {transform: rotate(-20deg);}
+}
+@-webkit-keyframes dance {
+    0% {transform: rotate(20deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+.blinking-cursor {
+    margin: 0 auto;
+    font-size: 30px;
+    color: #9B9CFE;
+    animation: blink 1s step-end infinite;
+  }
+  
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #9B9CFE;
+    }
+}
+  
+@-moz-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #9B9CFE;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #9B9CFE;
+    }
+}
+
+@-ms-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #9B9CFE;
+    }
+}
+
+@-o-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #9B9CFE;
+    }
+}
