@@ -104,3 +104,4 @@ ENV/
 .pyenv/
 .vs/
 .vscode/
+.idea/
