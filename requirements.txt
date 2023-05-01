@@ -1,10 +1,10 @@
-﻿appdirs==1.4.3
+appdirs==1.4.3
 click==7.1.1
 distlib==0.3.0
 dnspython==1.16.0
 email-validator==1.0.5
 filelock==3.0.12
-Flask==1.1.2
+Flask==2.3.2
 Flask-WTF==0.14.3
 idna==2.9
 importlib-metadata==1.6.0
